@@ -37,3 +37,17 @@ INSERT INTO "order"(order_id, "date", customer_id, user_name) VALUES
     ('OD003','2024-08-07','C003','U005'),
     ('OD004','2024-08-07','C004','U002'),
     ('OD005','2024-08-07','C005','U003');
+
+CREATE TABLE item(
+                     bar_code VARCHAR(50) PRIMARY KEY ,
+                     stock INT NOT NULL ,
+                     description VARCHAR(150) NOT NULL ,
+                     price DECIMAL(9,2) NOT NULL
+);
+
+INSERT INTO item(bar_code, stock, description, price) VALUES
+                                                          ('B001',10,'Key board',1250.00),
+                                                          ('B002',10,'Mouse',750.00),
+                                                          ('B003',10,'Head Set',4000.00),
+                                                          ('B004',10,'Lap top',150000.00),
+                                                          ('B005',10,'Laptop Cover',3200.00);
